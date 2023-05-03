@@ -1,5 +1,8 @@
 import org.jetbrains.sbtidea.Keys._
 
+
+resolvers += "IntelliJ IDEA Plugin Repository" at "https://plugins.jetbrains.com/maven/"
+
 lazy val myAwesomeFramework =
   project.in(file("."))
     .enablePlugins(SbtIdeaPlugin)
